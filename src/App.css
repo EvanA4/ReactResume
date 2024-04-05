@@ -1,0 +1,24 @@
+.main {
+    height: 100%;
+
+    position: relative;
+}
+
+.default {
+    background-color: rgb(19, 16, 14);
+    padding-top: 35vh;
+}
+
+.projects {
+    background: rgb(19, 16, 14);
+    background: linear-gradient(0deg, rgb(3, 3, 3) 0%, rgb(19, 16, 14, 1) 100%);
+    padding-top: 35vh;
+}
+
+#opening {
+    display: none;
+}
+
+#toHide {
+    display: none !important;
+}
