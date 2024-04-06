@@ -1,0 +1,49 @@
+/* Contact */
+
+.contact fieldset {
+    padding: 0;
+    margin: 0;
+    border: transparent;
+    border-top: 5px solid gray;
+    background-color: rgb(5, 5, 5);
+}
+
+.contact legend {
+    /* color: rgb(125, 134, 255); */
+    color: white;
+    font-size: 70px;
+    user-select: none;
+    padding: 0 calc(max(2vw, 20px)) 0 calc(max(2vw, 20px));
+    margin: 0 auto 0 auto;
+}
+
+.contact p,
+.contact a {
+    padding: 0 calc(max(5vw, 10px)) 0 calc(max(5vw, 10px));
+    color: rgb(189, 189, 189);
+    font-size: calc(max(2vw, 25px));
+}
+
+#github {
+    color: rgb(255, 153, 0);
+}
+
+#github:hover {
+    color: rgb(255, 200, 116);
+}
+
+#github:active {
+    color: rgb(255, 231, 195);
+}
+
+#linkedin {
+    color: rgb(0, 217, 255);
+}
+
+#linkedin:hover {
+    color: rgb(126, 236, 255);
+}
+
+#linkedin:active {
+    color: rgb(158, 240, 255);
+}

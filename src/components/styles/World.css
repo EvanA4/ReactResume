@@ -1,14 +1,26 @@
 .worldContainer {
     position: relative;
     background-color: #111111;
-    height: 100% !important;
-    width: 100% !important;
+    height: 100vh;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
     box-shadow: 1px 0 20px black;
+}
+
+.sim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scrollOpen, .scrollOpenPhysics {
@@ -40,21 +52,71 @@
     user-select: none;
 }
 
-.toggleBtn {
-    padding: 0;
-    background-color: transparent;
-    margin: 0 auto 0 auto;
-    user-select: none;
-    border: none;
-    color: rgb(236, 236, 236);
-    text-align: center;
-    align-content: center;
+.toggleDiv, .toggledDiv {
+    width: 20vw;
+    height: 20vw;
+    transform: rotateX(45deg);
 
-    font-size: min(15vw, 140px);
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 30vw;
+    position: relative;
+
+    background-color: rgb(0, 92, 0);
+    color: rgb(236, 236, 236);
+    box-shadow: 0 10vh black;
 }
 
-.toggleBtn span {
-    color: rgb(0, 255, 0);
+.toggleDiv img, .toggledDiv img {
+    height: 75%;
+    width: 70%;
+    margin: 12.5% 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.toggleDiv:hover {
+    background-color: rgb(0, 53, 0);
+}
+
+.toggledDiv {
+    background-color: rgb(0, 53, 0);
+    animation: press;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.toggleBtn {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: transparent;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.simText {
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    z-index: 1;
+    user-select: none;
+}
+
+.redText {
+    color: red;
+}
+
+.greenText {
+    color: green;
 }
 
 @keyframes scrollClose {
@@ -64,5 +126,25 @@
 
     to {
         opacity: 0;
+    }
+}
+
+@keyframes press {
+    0% {
+        margin-top: 0;
+        box-shadow: 0 10vh black;
+    }
+    20% {
+        margin-top: 10vh;
+        box-shadow: 0 3vh black;
+    }
+    99% {
+        margin-top: 10vh;
+        box-shadow: 0 3vh black;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        display: none;
     }
 }

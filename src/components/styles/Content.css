@@ -9,11 +9,12 @@
 }
 
 .aboutSet {
-    margin: 0 calc(max(4vw, 10px)) 40vh calc(max(4vw, 10px));
+    margin: 35vh calc(max(4vw, 10px)) 40vh calc(max(4vw, 10px));
     border: 1px solid rgb(22, 141, 28);
+    border-radius: 30px;
     background-color: black;
-    font-family: ClassicConsoleNeue;
     box-shadow: 1px 10px 10px black;
+    padding: 0 30px 30px 30px;
 
     position: relative;
 }
@@ -23,10 +24,20 @@
     top: calc(min(-30vh, -180px));
 }
 
-.aboutSet p {
+.aboutP {
     color: white;
-    font-size: calc(max(2vw, 25px));
+    font-size: calc(max(1.5vw, 25px));
     padding: 0 calc(max(2vw, 30px)) 0 calc(max(2vw, 30px));
+}
+
+.cmdBtn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 358px) {
@@ -43,15 +54,38 @@
     }
 }
 
+.rect {
+    animation-name: rectangle;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+}
+
+@keyframes rectangle {
+    0% {
+        color: transparent;
+    }
+
+    50% {
+        color: white;
+    }
+}
+
 /* Experience */
+
+.experienceContainer {
+    /* background-color: rgb(19, 16, 14); */
+    background-color: rgb(10, 8, 8);
+    box-shadow: 0 300px rgb(10, 8, 8), 0 -100px 100px rgb(10, 8, 8);
+}
 
 .experienceP {
     margin-left: 5vw;
     margin-bottom: 50px;
 
-    font-family: ClassicConsoleNeue;
     font-size: 100px;
-    color: rgb(135, 255, 249);
+    color: rgb(0, 255, 242);
     width: min-content;
     user-select: none;
 
@@ -63,53 +97,39 @@
     top: -15vh;
 }
 
-.experienceContainer {
-    width: auto;
-    margin: 0 20vw 40vh 20vw;
+.experienceList {
     display: grid;
-    grid-template-rows: 1fr 8fr 1fr;
-    box-shadow: 1px 10px 10px black;
-
-    height: 700px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 70px;
 }
 
-.experienceContent {
+.experienceItem {
     background-color: rgb(26, 28, 32);
-    padding: calc(max(2vw, 15px));
+    padding: 50px 70px;
+    margin-bottom: 70px;
+    border-radius: 60px;
 
-    font-family: ClassicConsoleNeue;
     color: white;
     font-size: calc(max(2vw, 25px));
+
+    box-shadow: 5px 5px 10px black;
 }
 
-.experienceContent li {
+.experienceItem li {
     margin: 0;
-    color: rgb(184, 184, 184);
+    color: rgb(159, 180, 194); /*rgb(184, 184, 184)*/
 }
 
-.experienceContent span {
+.itemHeader {
     font-size: calc(max(2.4vw, 45px));
+    margin: 0;
 }
 
-.experienceContainer button {
-    font-family: ClassicConsoleNeue;
-    border: 1px solid rgb(22, 103, 141);
-    background-color: black;
-    color: rgb(157, 211, 255);
-    font-size: 30px;
-    min-height: 70px;
-}
-
-.experienceContainer button:hover {
-    border: 1px solid rgb(89, 165, 228);
-    background-color: rgb(5, 19, 32);
-    color: rgb(207, 232, 255);
-}
-
-.experienceContainer button:active {
-    border: 1px solid rgb(184, 223, 255);
-    background-color: rgb(12, 32, 46);
-    color: rgb(255, 255, 255);
+.itemDate {
+    font-size: calc(max(1vw, 20px));
+    margin: 0;
+    color: rgb(151, 151, 151);
 }
 
 @media screen and (max-width: 570px) {
@@ -135,56 +155,4 @@
         width: 87.806vw;
         margin: 0 6.097vw 40vh 6.097vw;
     }
-}
-
-/* Contact */
-
-.contact fieldset {
-    padding: 0;
-    margin: 0;
-    border: transparent;
-    border-top: 5px solid gray;
-    background-color: rgb(5, 5, 5);
-}
-
-.contact legend {
-    /* color: rgb(125, 134, 255); */
-    color: white;
-    font-size: 70px;
-    font-family: ClassicConsoleNeue;
-    user-select: none;
-    padding: 0 calc(max(2vw, 20px)) 0 calc(max(2vw, 20px));
-    margin: 0 auto 0 auto;
-}
-
-.contact p,
-.contact a {
-    font-family: ClassicConsoleNeue;
-    padding: 0 calc(max(5vw, 10px)) 0 calc(max(5vw, 10px));
-    color: rgb(189, 189, 189);
-    font-size: calc(max(2vw, 25px));
-}
-
-#github {
-    color: rgb(255, 153, 0);
-}
-
-#github:hover {
-    color: rgb(255, 200, 116);
-}
-
-#github:active {
-    color: rgb(255, 231, 195);
-}
-
-#linkedin {
-    color: rgb(0, 217, 255);
-}
-
-#linkedin:hover {
-    color: rgb(126, 236, 255);
-}
-
-#linkedin:active {
-    color: rgb(158, 240, 255);
 }
