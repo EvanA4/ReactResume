@@ -1,43 +1,32 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import './styles/Content.css'
+
+// credit for typing animation
+// https://blog.logrocket.com/3-ways-implement-typing-animation-react/
+const Typewriter = ({ text, delay }) => {
+    const [currentText, setCurrentText] = useState('');
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Typing logic goes here
+    useEffect(() => {
+        if (currentIndex < text.length) {
+            const timeout = setTimeout(() => {
+                setCurrentText(prevText => prevText + text[currentIndex]);
+                setCurrentIndex(prevIndex => prevIndex + 1);
+            }, delay);
+
+            return () => clearTimeout(timeout);
+        }
+    }, [currentIndex, delay, text]);
+
+    return <span>{currentText}</span>;
+};
 
 export default function Content() {
     const [selected, select] = useState(0);
 
-    var experiences = [
-
-
-        <div style={{ display: selected === 0 ? "block" : "none" }}>
-            <span>Unpaid Internship - Summer 2021</span><br />
-            <ul style={{ listStyle: "square" }}>
-                <li>GitHub and coding with others</li>
-                <li>GUI design with PyQt Creator</li>
-                <li>Beginner Python programming</li>
-                <li>Facial recognition of distorted images</li>
-            </ul>
-        </div >,
-
-
-        <div style={{ display: selected === 1 ? "block" : "none" }}>
-            <span>SULI at ORNL - Summer 2022</span><br />
-            <ul style={{ listStyle: "square" }}>
-                <li>GitHub and coding with others</li>
-                <li>Presented my contributions at meetings</li>
-                <li>Object recognition with point clouds</li>
-                <li>Intermediate C++ and Python</li>
-                <li>Data Structures and algorithms</li>
-            </ul>
-        </div>,
-
-
-        <div style={{ display: selected === 2 ? "block" : "none" }}>
-            <span>Looking for my Projects?</span><br />
-            <p>Click the Projects button at the top!</p>
-        </div>
-
-
-    ]
+    const aboutText = " I've been coding since 2021, dabbling with NodeJS, PyTorch, React, PyQT, and more.";
 
     function handleClick(isPrev) {
         if (isPrev && selected !== 0) select(selected - 1);
@@ -49,36 +38,47 @@ export default function Content() {
             <fieldset className='aboutSet'>
                 <span className='aboutAnchor' id='About'></span>
                 <legend id='About'>About</legend>
-                <p>
-                    Hi, I'm EVAN ABBOTT -- a computer science
-                    sophomore at UTK. I'm currently interested in web development and machine learning.
-                    I value clear communication and clever solutions
-                    when working on projects.
-                </p>
+                <button className='cmdBtn' onClick={()=>{ setIsTyping(true) }}></button>
+                <span className='aboutP'>
+                    <span>Hi, I'm Evan Abbott, a computer science sophomore at UTK. I'm currently interested in data science and especially machine learning.</span>
+                    <Typewriter text={aboutText} delay={100} />
+                    <span className='rect'>|</span>
+                </span>
             </fieldset>
 
-            <p className='experienceP'>
-                <span className='experienceAnchor' id='Experience'></span>
-                Experience
-            </p>
             <div className='experienceContainer'>
-                <button onClick={() => { handleClick(true) }}>Previous</button>
-                <div className='experienceContent'>
-                    {...experiences}
-                </div>
-                <button onClick={() => { handleClick(false) }}>Next</button>
-            </div>
+                <p className='experienceP'>
+                    <span className='experienceAnchor' id='Experience'></span>
+                    Experience
+                </p>
+                <div className='experienceList'>
+                    <div className='experienceItem'>
+                        <p className='itemHeader'>Unpaid Internship</p>
+                        <p className='itemDate'>Summer 2021</p>
+                        <ul style={{ listStyle: "square" }}>
+                            <li>GitHub and coding with others</li>
+                            <li>GUI design with PyQt Creator</li>
+                            <li>Beginner Python programming</li>
+                            <li>Facial recognition of distorted images</li>
+                        </ul>
+                    </div >
 
-            <div className='contact' id='Contact'>
-                <span className='experienceAnchor'></span>
-                <fieldset>
-                    <legend>Contact</legend>
-                    <a id="github" href="https://github.com/EvanA4">GitHub</a>
-                    <a id="linkedin" href="https://www.linkedin.com/in/evan-abbott-667167214/">LinkedIn</a>
-                    <p>(865) 313-3587</p>
-                    <p>evanabbott04@gmail.com</p>
-                </fieldset>
+
+                    <div className='experienceItem'>
+                        <p className='itemHeader'>SULI at ORNL</p>
+                        <p className='itemDate'>Summer 2022</p>
+                        <ul style={{ listStyle: "square" }}>
+                            <li>GitHub and coding with others</li>
+                            <li>Presented my contributions at meetings</li>
+                            <li>Object recognition with point clouds</li>
+                            <li>Intermediate C++ and Python</li>
+                            <li>Data Structures and algorithms</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </>
     );
 }
+
+// yarn add typewriter-effect
