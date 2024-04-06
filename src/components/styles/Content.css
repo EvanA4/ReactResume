@@ -77,7 +77,8 @@
 .experienceContainer {
     /* background-color: rgb(19, 16, 14); */
     background-color: rgb(10, 8, 8);
-    box-shadow: 0 300px rgb(10, 8, 8), 0 -100px 100px rgb(10, 8, 8);
+    box-shadow: 0 1000px rgb(10, 8, 8), 0 -100px 100px rgb(10, 8, 8);
+    margin-bottom: 35vh;
 }
 
 .experienceP {

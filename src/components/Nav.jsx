@@ -35,7 +35,7 @@ export default function Nav(props) {
                 <button className={btnStates[navOpen]} onClick={()=>{
                     if (navOpen % 2 == 0) setNav(1);
                     else setNav(2);
-                }}><img src="./src/components/supports/navArrow.svg"/></button>
+                }}><img src="./src/components/supports/bookmark.svg"/></button>
             </div>
         </div>
     )
