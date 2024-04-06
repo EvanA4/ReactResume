@@ -7,5 +7,5 @@ While in the ReactResumeSrc directory:
 2. mv -force src/* client/src
 3. rm src
 4. cd client
-5. yarn add @react-three/fiber @react-three/drei @react-three/rapier @react-three/postprocessing three
+5. yarn add @react-three/fiber @react-three/drei @react-three/rapier @react-three/postprocessing three react-device-detect react-swipe
 6. yarn run dev
