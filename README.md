@@ -5,7 +5,7 @@
 While in the ReactResumeSrc directory:
 1. yarn create vite client --template react
 2. mv -force src/assets/* client/src/assets
-3. rm client/src/vite.svg
+3. rm client/src/assets/react.svg
 4. rm -r src/assets
 5. mv -force src/* client/src
 6. mv -force index.html client
