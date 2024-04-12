@@ -18,4 +18,5 @@ While in client directory:
 1. yarn build
 2. mv ./src/assets/* ./dist/assets
 
-Because yarn does not account for include directories when building the project, we must manually change the include directories in the resulting JS file. In an text editing software, replace every occurance of "./src/assets" with "./assets"
+> [!WARNING]
+> Because yarn does not account for include directories when building the project, we must manually change the include directories in the resulting JS file. In an text editing software, replace every occurance of "./src/assets" with "./assets"
