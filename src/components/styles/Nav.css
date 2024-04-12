@@ -1,5 +1,5 @@
 .navContainer {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
     height: 0;
@@ -66,12 +66,12 @@
 .navLinks a {
     color: white;
     text-decoration: none;
-    font-size: 4em;
+    font-size: calc(max(min(64px, 4.2vw), 40px));
 }
 
 .icon {
     height: .85em;
-    margin-right: 50px;
+    margin-right: calc(max(min(50px, 4.19vw), 40px));
 }
 
 .navBtn, .openNavBtn, .closeNavBtn {

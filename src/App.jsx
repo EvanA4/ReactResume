@@ -21,8 +21,8 @@ function App() {
   return (
     <>
       <Nav setDefault={setDefault} />
+      <World isDefault={isDefault} />
       <div className='main'>
-        <World isDefault={isDefault} />
         {isDefault != 1 ? <></> : <Content />}
         {isDefault != 2 ? <></> : <Projects />}
         {isDefault == 0 ? <></> : <Contact />}

@@ -16,7 +16,7 @@ export default function Projects() {
                     ref={el => (reactSwipeEl = el)}
                 >
                     <div>
-                        <div className='slide'>
+                        <div className='slide' id={isMobile ? 'mobileSlide' : 'normalSlide'}>
                             <p className='slideTitle'>RCTurtle</p>
                             <p className='slideDesc'>Control a Minecraft robot from a web app with a 3D display!</p>
                             <ul>
@@ -29,7 +29,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div>
-                        <div className='slide'>
+                        <div className='slide' id={isMobile ? 'mobileSlide' : 'normalSlide'}>
                             <p className='slideTitle'>RREF Solver</p>
                             <p className='slideDesc'>Can solve a system of equations of any size with Gauss Jordan Elimination.</p>
                             <ul>
@@ -41,7 +41,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div>
-                        <div className='slide'>
+                        <div className='slide' id={isMobile ? 'mobileSlide' : 'normalSlide'}>
                             <p className='slideTitle'>Resume Website</p>
                             <p className='slideDesc'>A not-so-light website showing experience and projects.</p>
                             <ul>

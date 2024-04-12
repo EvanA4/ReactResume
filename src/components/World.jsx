@@ -145,6 +145,7 @@ export default function World() {
                         }}></button>
                         <img src="./src/components/supports/powerButton.svg"/>
                     </div>
+                    <div className='btnShadow' id={isPressed ? 'toggledShadow' : ''}></div>
                 </>}
             </div>
         </div>

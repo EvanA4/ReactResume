@@ -1,10 +1,10 @@
 .projectLabel {
     color: rgb(157, 255, 157);
-    font-size: 100px;
+    font-size: min(15vw, 100px);
     margin: 35vh auto 70px auto;
     text-align: center;
-    background-color: black;
     width: fit-content;
+    background-color: black;
     padding: 0px 70px 10px 70px;
     border-radius: 40px;
 }
@@ -14,7 +14,7 @@
 }
 
 .slide {
-    padding: 30px 70px 30px 50px;
+    padding: 30px calc(5% + 70px) 30px 50px;
     width: 60%;
     margin: 0 auto;
     background-color: rgb(4, 5, 4);
@@ -30,14 +30,14 @@
 
 .slideTitle {
     color: white;
-    font-size: 50px;
+    font-size: min(8.5vw, 50px);
     width: fit-content;
     margin: 0 0 30px 0;
 }
 
 .slideDesc, .slide ul {
     color: rgb(207, 207, 207);
-    font-size: 25px;
+    font-size: min(4.5vw, 25px);
 }
 
 .slide ul {
@@ -80,4 +80,22 @@
 
 .prevBtn img {
     transform: rotateZ(180deg);
+}
+
+@media screen and (max-width: 544px) {
+    .slide ul {
+        padding: 0 0 0 12.3%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .slide {
+        padding: 30px 50px;
+        padding-right: calc(5% + (9.51vw + 70px) / 2);
+    }
+
+    .nextBtn, .prevBtn {
+        height: calc((9.51vw + 70px) / 2);
+        width: calc((9.51vw + 70px) / 2);
+    }
 }

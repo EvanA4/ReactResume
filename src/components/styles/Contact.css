@@ -11,13 +11,19 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 35vh;
+    height: max(35vh, 300px);
 }
 
 .contact legend {
     color: white;
-    font-size: 70px;
+    font-size: min(20vw, 100px);
     user-select: none;
     padding: 0 calc(max(2vw, 20px)) 0 calc(max(2vw, 20px));
     margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 1344px) {
+    .contact img {
+        height: calc((5.2vw + 70px) / 2);
+    }
 }

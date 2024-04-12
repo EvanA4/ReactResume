@@ -4,7 +4,7 @@
     color: rgb(157, 255, 157);
     user-select: none;
     margin-left: 5vw;
-    font-size: 100px;
+    font-size: min(22.6vw, 100px);
     padding: 0 calc(max(1vw, 10px)) 0 calc(max(1vw, 10px));
 }
 
@@ -40,20 +40,6 @@
     width: 100%;
 }
 
-@media screen and (max-width: 358px) {
-    .aboutSet legend {
-        margin-left: 0;
-    }
-
-    .aboutSet {
-        border: 1px solid transparent;
-    }
-
-    .aboutSet p {
-        font-size: 21.5px;
-    }
-}
-
 .rect {
     animation-name: rectangle;
     animation-duration: 2s;
@@ -85,9 +71,8 @@
     margin-left: 5vw;
     margin-bottom: 50px;
 
-    font-size: 100px;
+    font-size: calc(min(15vw, 100px));
     color: rgb(0, 255, 242);
-    width: min-content;
     user-select: none;
 
     position: relative;
@@ -102,7 +87,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: 70px;
+    margin: min(10vw, 70px);
 }
 
 .experienceItem {
@@ -112,7 +97,7 @@
     border-radius: 60px;
 
     color: white;
-    font-size: calc(max(2vw, 25px));
+    font-size: calc(min(max(2vw, 25px), 4vw));
 
     box-shadow: 5px 5px 10px black;
 }
@@ -123,37 +108,28 @@
 }
 
 .itemHeader {
-    font-size: calc(max(2.4vw, 45px));
+    font-size: calc(min(max(2.4vw, 45px), 8vw));
     margin: 0;
 }
 
 .itemDate {
-    font-size: calc(max(1vw, 20px));
+    font-size: calc(max(1vw, 25px));
     margin: 0;
     color: rgb(151, 151, 151);
 }
 
-@media screen and (max-width: 570px) {
-    .experienceP {
-        font-size: 17.54vw;
-        text-align: center;
+@media screen and (max-width: 424px) {
+    .experienceItem {
+        padding: 11.8vw 16.5vw;
     }
 }
 
-@media screen and (max-width: 960px) {
-    .experienceContent span {
-        font-size: calc(max(4.687vw, 30px));
+@media screen and (max-width: 736px) {
+    .experienceItem ul {
+        padding: 0 0 0 calc(max(0px, 40px + 100vw - 736px));
+        /* max(0, 40 + 424px - 100vw) */
     }
-
-    .experienceContainer {
-        width: 576px;
-        margin: 0 auto 40vh auto;
-    }
-}
-
-@media screen and (max-width: 656px) {
-    .experienceContainer {
-        width: 87.806vw;
-        margin: 0 6.097vw 40vh 6.097vw;
+    .itemDate {
+        font-size: calc(min(max(2vw, 25px), 4vw));
     }
 }
