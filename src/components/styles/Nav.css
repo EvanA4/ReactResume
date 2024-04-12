@@ -1,11 +1,7 @@
-.navContainer {
+.pg, .openPg, .closePg {
     position: fixed;
     top: 0;
     z-index: 10;
-    height: 100%;
-}
-
-.pg, .openPg, .closePg {
     height: 100%;
 }
 
@@ -17,14 +13,14 @@
     animation: widenPg;
     animation-duration: .7s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease;
 }
 
 .closePg {
     animation: shrinkPg;
     animation-duration: .7s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease;
 }
 
 @keyframes widenPg {
@@ -50,7 +46,7 @@
 }
 
 .navLinks {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     backdrop-filter: blur(15px);
     background-color: rgba(24, 24, 24, 0.7);
@@ -75,11 +71,11 @@
 .navBtn, .openNavBtn, .closeNavBtn {
     background-color: rgb(34, 34, 34);
     border: 1px solid rgb(255, 255, 255);
-    border-left: none;
-    border-radius: 0 15px 15px 0;
+    border-radius: 15px;
     margin-top: 20px;
     height: 70px;
-    width: 90px;
+    width: 105px;
+    padding: 0;
 
     position: absolute;
     top: 0;
@@ -94,41 +90,41 @@
 }
 
 .navBtn img, .openNavBtn img, .closeNavBtn img {
-    margin: 15%;
-    height: 70%;
-    width: 70%;
+    margin: 15% auto 15% auto;
+    height: 60%;
+    width: 60%;
+}
+
+.navBtn {
+    left: -15px;
 }
 
 .openNavBtn {
     animation: flipBtn;
     animation-duration: .7s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
 }
 
 .closeNavBtn {
     animation: flipBtnBack;
     animation-duration: .7s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
 }
 
 @keyframes flipBtn {
     from {
-        transform: rotateY(0deg);
-        left: 0;
+        left: -15px;
     } to {
-        transform: rotateY(180deg);
         left: calc(100% - 90px);
     }
 }
 
 @keyframes flipBtnBack {
     from {
-        transform: rotateY(180deg);
         left: calc(100% - 90px);
     } to {
-        transform: rotateY(0deg);
-        left: 0;
+        left: -15px;
     }
 }
