@@ -5,12 +5,13 @@
 While in the ReactResumeSrc directory:
 1. yarn create vite client --template react
 2. mv -force src/assets/* client/src/assets
-3. mv -force src/* client/src
-4. mv -force index.html client
-5. rm -r src
-6. cd client
-7. yarn add @react-three/fiber @react-three/drei @react-three/rapier @react-three/postprocessing three react-device-detect react-swipe
-8. yarn run dev
+3. rm -r src/assets
+4. mv -force src/* client/src
+5. mv -force index.html client
+6. rm -r src
+7. cd client
+8. yarn add @react-three/fiber @react-three/drei @react-three/rapier @react-three/postprocessing three react-device-detect react-swipe
+9. yarn run dev
 
 ## How to build project
 
