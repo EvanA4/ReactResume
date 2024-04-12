@@ -26,5 +26,6 @@ While in client directory:
 > ### TODO
 > 1. Small messages to clarify to tap the heads and swipe the project cards
 > 2. Experience cards should not have as much padding and margin in mobile
-> 3. Contact label should be in the middle on mobile but isnt
-> 4. Find a way to include the old opening animation
+> 3. Experience cards should brighten as you scroll towards them
+> 4. Contact label should be in the middle on mobile but isnt
+> 5. Find a way to include the old opening animation
