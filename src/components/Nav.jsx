@@ -15,27 +15,27 @@ export default function Nav(props) {
                             <a href="#About" onClick={()=>{
                                 props.setDefault(1);
                                 setNav(2);
-                            }}><img className='icon' src="./src/components/supports/questionMark.svg"/>About</a>
+                            }}><img className='icon' src="./src/assets//questionMark.svg"/>About</a>
 
                             <a href="#Experience" onClick={()=>{
                                 props.setDefault(1);
                                 setNav(2);
-                            }}><img className='icon' src="./src/components/supports/book.svg"/>Experience</a>
+                            }}><img className='icon' src="./src/assets/book.svg"/>Experience</a>
 
                             <a href="#Contact" onClick={()=>{
                                 setNav(2);
-                            }}><img className='icon' src="./src/components/supports/magnifyingGlass.svg"/>Contact</a>
+                            }}><img className='icon' src="./src/assets/magnifyingGlass.svg"/>Contact</a>
 
                             <a href="#Projects" onClick={()=>{
                                 props.setDefault(2);
                                 setNav(2);
-                            }}><img className='icon' src="./src/components/supports/hammer.svg"/>Projects</a>
+                            }}><img className='icon' src="./src/assets/hammer.svg"/>Projects</a>
                     </div>
                 </div>
                 <button className={btnStates[navOpen]} onClick={()=>{
                     if (navOpen % 2 == 0) setNav(1);
                     else setNav(2);
-                }}><img src="./src/components/supports/bookmark.svg"/></button>
+                }}><img src="./src/assets/bookmark.svg"/></button>
             </div>
         </div>
     )

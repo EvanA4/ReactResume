@@ -1,5 +1,6 @@
+import { useEffect } from 'react'
 import ReactSwipe from 'react-swipe'
-import isMobile from 'react-device-detect'
+import { isMobile } from 'react-device-detect'
 
 import './styles/Projects.css'
 
@@ -24,8 +25,8 @@ export default function Projects() {
                                 <li>ThreeJS</li>
                                 <li>NodeJS</li>
                             </ul>
-                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/components/supports/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button disabled className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/components/supports/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button disabled className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
                         </div>
                     </div>
                     <div>
@@ -36,8 +37,8 @@ export default function Projects() {
                                 <li>Basic C++</li>
                                 <li>Saved me time in matrix algebra</li>
                             </ul>
-                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/components/supports/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/components/supports/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
                         </div>
                     </div>
                     <div>
@@ -49,8 +50,8 @@ export default function Projects() {
                                 <li>ThreeJS</li>
                                 <li>Web design</li>
                             </ul>
-                            {isMobile ? <></> : <button disabled className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/components/supports/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/components/supports/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button disabled className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
                         </div>
                     </div>
                 </ReactSwipe>

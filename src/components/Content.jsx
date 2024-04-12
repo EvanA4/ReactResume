@@ -24,14 +24,8 @@ const Typewriter = ({ text, delay }) => {
 };
 
 export default function Content() {
-    const [selected, select] = useState(0);
 
     const aboutText = " I've been coding since 2021, dabbling with NodeJS, PyTorch, React, PyQT, and more.";
-
-    function handleClick(isPrev) {
-        if (isPrev && selected !== 0) select(selected - 1);
-        else if (!isPrev && selected !== experiences.length - 1) select(selected + 1);
-    }
 
     return (
         <>

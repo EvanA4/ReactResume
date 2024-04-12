@@ -71,7 +71,7 @@ export default function World() {
     }, [handleNavigation]);
 
     const Evan3D = (props, vec = new THREE.Vector3) => {
-        const { nodes, materials } = useGLTF('./src/components/supports/cheaperMiniEvan.glb');
+        const { nodes, materials } = useGLTF('./src/assets/cheaperMiniEvan.glb');
         const api = useRef();
         useFrame(() => {
             vec = api.current?.translation();
@@ -143,7 +143,7 @@ export default function World() {
                                         ]);
                             }, 1000);
                         }}></button>
-                        <img src="./src/components/supports/powerButton.svg"/>
+                        <img src="./src/assets/powerButton.svg"/>
                     </div>
                     <div className='btnShadow' id={isPressed ? 'toggledShadow' : ''}></div>
                 </>}

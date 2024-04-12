@@ -1,4 +1,4 @@
-import video from './supports/resume.mp4'
+import video from './src/assets/resume.mp4'
 
 import './styles/Opening.css'
 

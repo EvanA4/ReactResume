@@ -10,13 +10,7 @@ import Projects from './components/Projects';
 import './App.css'
 
 function App() {
-  const [isDefault, setDefault] = useState(0);
-
-  useEffect(() => {
-    setTimeout(() => {
-        setDefault(1);
-    }, 500) // 3700
-  }, [setDefault])
+  const [isDefault, setDefault] = useState(1);
 
   return (
     <>
