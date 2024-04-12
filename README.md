@@ -4,7 +4,7 @@
 
 While in the ReactResumeSrc directory:
 1. yarn create vite client --template react
-2. mv src/assets client
+2. mv src/assets client/src
 3. mv -force src/* client/src
 4. mv -force index.html client
 5. rm -r src
