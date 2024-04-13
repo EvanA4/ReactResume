@@ -24,8 +24,6 @@ While in client directory:
 > Because yarn does not account for include directories when building the project, we must manually change the include directories in the resulting JS file. In an text editing software, replace every occurance of "./src/assets" with "./assets"
 
 > ### TODO
-> 1. Small messages to clarify to tap the heads and swipe the project cards
-> 2. Experience cards should not have as much padding and margin in mobile
+> 1. Contact label should be in the middle on mobile but isnt
+> 2. Find a way to include the old opening animation
 > 3. Experience cards should brighten as you scroll towards them
-> 4. Contact label should be in the middle on mobile but isnt
-> 5. Find a way to include the old opening animation
