@@ -26,4 +26,5 @@ While in client directory:
 > ### TODO
 > 1. Contact label should be in the middle on mobile but isnt
 > 2. Reduce saturation of experience li elements
-> 3. Find a way to include the old opening animation
+> 3. Unite both pages into one longer page
+> 4. Find a way to include the old opening animation
