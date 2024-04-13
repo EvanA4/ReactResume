@@ -26,4 +26,3 @@ While in client directory:
 > ### TODO
 > 1. Contact label should be in the middle on mobile but isnt
 > 2. Find a way to include the old opening animation
-> 3. Experience cards should brighten as you scroll towards them
