@@ -1,10 +1,9 @@
-import { useEffect } from 'react'
 import ReactSwipe from 'react-swipe'
 import { isMobile } from 'react-device-detect'
 
 import './styles/Projects.css'
 
-export default function Projects() {
+export default function Projects(props) {
 
     let reactSwipeEl;
 
@@ -17,7 +16,7 @@ export default function Projects() {
                     ref={el => (reactSwipeEl = el)}
                 >
                     <div>
-                        <div className='slide' id={isMobile ? 'mobileSlide' : 'normalSlide'}>
+                        <div className='slide' id={isMobile ? 'mobileSlide' : 'normalSlide'} >
                             <p className='slideTitle'>RCTurtle</p>
                             <p className='slideDesc'>Control a Minecraft robot from a web app with a 3D display!</p>
                             <ul>
@@ -27,6 +26,7 @@ export default function Projects() {
                             </ul>
                             {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
                             {isMobile ? <></> : <button disabled className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <span className='swipeTip' id={'showTip' }>Swipe the cards!</span> : <></>}
                         </div>
                     </div>
                     <div>
@@ -59,5 +59,3 @@ export default function Projects() {
         </>
     );
 }
-
-// yarn add react-device-detect react-swipe

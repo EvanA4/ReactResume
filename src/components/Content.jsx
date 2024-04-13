@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 import './styles/Content.css'
 
@@ -23,7 +23,7 @@ const Typewriter = ({ text, delay }) => {
     return <span>{currentText}</span>;
 };
 
-export default function Content() {
+export default function Content(props) {
 
     const aboutText = " I've been coding since 2021, dabbling with NodeJS, PyTorch, React, PyQT, and more.";
 
@@ -41,7 +41,7 @@ export default function Content() {
             </fieldset>
 
             <div className='experienceContainer'>
-                <p className='experienceP'>
+                <p className='experienceP' style={{color: "rgb(" + props.color[0][0] + ", " + props.color[0][1] + ", " + props.color[0][2] + ")"}}>
                     <span className='experienceAnchor' id='Experience'></span>
                     Experience
                 </p>
@@ -49,7 +49,7 @@ export default function Content() {
                     <div className='experienceItem'>
                         <p className='itemHeader'>Unpaid Internship</p>
                         <p className='itemDate'>Summer 2021</p>
-                        <ul style={{ listStyle: "square" }}>
+                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.7 + ", " + props.color[1][1]/1.7 + ", " + props.color[1][2]/1.7 + ")" }}>
                             <li>GitHub and coding with others</li>
                             <li>GUI design with PyQt Creator</li>
                             <li>Beginner Python programming</li>
@@ -61,7 +61,7 @@ export default function Content() {
                     <div className='experienceItem'>
                         <p className='itemHeader'>SULI at ORNL</p>
                         <p className='itemDate'>Summer 2022</p>
-                        <ul style={{ listStyle: "square" }}>
+                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.7 + ", " + props.color[0][1]/1.7 + ", " + props.color[0][2]/1.7 + ")" }}>
                             <li>GitHub and coding with others</li>
                             <li>Presented my contributions at meetings</li>
                             <li>Object recognition with point clouds</li>

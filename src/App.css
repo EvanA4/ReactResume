@@ -5,3 +5,45 @@
 .big {
     padding-top: 35vh;
 }
+
+/* Tip styling for Contact, World, and Projects */
+
+#tip, #showTip, #hideTip {
+    font-size: calc(min(25px, 4.5vw));
+}
+
+#tip {
+    display: none;
+}
+
+#showTip {
+    animation: showTip;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#hideTip {
+    animation: hideTip;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showTip {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes hideTip {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}

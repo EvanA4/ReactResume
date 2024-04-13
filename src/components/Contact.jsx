@@ -4,7 +4,7 @@ import './styles/Contact.css'
 
 export default function Contact() {
     const [showEmail, setShowEmail] = useState(0);
-    const emailStates = ['email', 'showEmail', 'hideEmail'];
+    const emailStates = ['tip', 'showTip', 'hideTip'];
 
     return (
         <div className='contact' id='Contact'>
@@ -12,7 +12,7 @@ export default function Contact() {
             <fieldset>
                 <legend>
                     <span>Contact</span>
-                    <span className={emailStates[showEmail]} >evanabbott04@gmail.com</span>
+                    <span className='email' id={emailStates[showEmail]} >evanabbott04@gmail.com</span>
                 </legend>
                 <a id="github" href="https://github.com/EvanA4"><img src="./src/assets/github.svg"/></a>
                 <a id="linkedin" href="https://www.linkedin.com/in/evan-abbott-667167214/"><img src="./src/assets/linkedin.svg"/></a>

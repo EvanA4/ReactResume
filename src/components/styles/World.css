@@ -23,6 +23,15 @@
     align-items: center;
 }
 
+.tapTip {
+    position: absolute;
+    bottom: 1vh;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    border-radius: 10px;
+    padding: max(.5vw, 7px);
+}
+
 .scrollOpen, .scrollOpenPhysics {
     animation: headerOpen;
     animation-duration: .3s;

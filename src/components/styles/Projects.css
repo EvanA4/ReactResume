@@ -7,6 +7,15 @@
     background-color: black;
     padding: 0px 70px 10px 70px;
     border-radius: 40px;
+    position: relative;
+}
+
+.swipeTip {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 130%);
+    color: rgb(119, 119, 119);
 }
 
 .projectContainer {

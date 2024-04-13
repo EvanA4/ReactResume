@@ -7,49 +7,12 @@
     border: none;
 }
 
-.email, .showEmail, .hideEmail {
+.email {
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: calc(min(25px, 4.5vw));
     color: gray;
-}
-
-.email {
-    display: none;
-}
-
-.showEmail {
-    animation: showEmail;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-
-.hideEmail {
-    animation: hideEmail;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes showEmail {
-    from {
-        opacity: 0%;
-    }
-
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes hideEmail {
-    from {
-        opacity: 100%;
-    }
-
-    to {
-        opacity: 0%;
-    }
 }
 
 .contact fieldset {
