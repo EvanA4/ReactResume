@@ -20,13 +20,10 @@ function getWindowDimensions() {
 
 
 function App() {
-	const [isDefault, setDefault] = useState(1);
-	const [slideTipDefault, setSlideTipDefault] = useState(true);
-
 	// determine color for experiences
 	const [color, setColor] = useState([[256, 256, 256], [256, 256, 256]]);
 	const calcColor = (y) => {
-		var r1 = 0, r2 = 150, g = 255, b1 = 0, b2 = 0;
+		var r1 = 0, r2 = 170, g = 255, b1 = 0, b2 = 0;
 		b1 = 70 * Math.sin(y/150) + 195;
 		b2 = 70 * Math.cos(y/150) + 195;
 
@@ -64,11 +61,11 @@ function App() {
 
 	return (
 		<>
-			<Nav setDefault={setDefault} />
+			<Nav />
 			<World physicsOn={physicsOn} setPhysics={setPhysics} getWindowDimensions={getWindowDimensions} setIsPressed={setIsPressed} isPressed={isPressed} />
 			<div className='main'>
-				{isDefault == 1 ? <Content color={color} /> : <></>}
-				{isDefault == 2 ? <Projects slideTipDefault={slideTipDefault} /> : <></>}
+				<Content color={color} /> : <></>
+				<Projects />
 				<Contact />
 			</div>
 		</>

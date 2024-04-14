@@ -4,7 +4,7 @@
     color: rgb(157, 255, 157);
     user-select: none;
     margin-left: 5vw;
-    font-size: min(22.6vw, 100px);
+    font-size: min(15vw, 100px);
     padding: 0 calc(max(1vw, 10px)) 0 calc(max(1vw, 10px));
 }
 
@@ -62,8 +62,8 @@
 
 .experienceContainer {
     background-color: rgb(10, 8, 8);
-    box-shadow: 0 100px rgb(10, 8, 8), 0 -100px 70px rgb(10, 8, 8);
-    padding-bottom: 35vh;
+    box-shadow: 0 100px 70px rgb(10, 8, 8), 0 -100px 70px rgb(10, 8, 8);
+    padding-bottom: 5vh;
 }
 
 .experienceP {

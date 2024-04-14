@@ -25,7 +25,7 @@ const Typewriter = ({ text, delay }) => {
 
 export default function Content(props) {
 
-    const aboutText = " I've been coding since 2021, dabbling with NodeJS, PyTorch, React, PyQT, and more.";
+    const aboutText = " PyTorch, React, PyQT, and more.";
 
     return (
         <>
@@ -34,7 +34,10 @@ export default function Content(props) {
                 <legend id='About'>About</legend>
                 <button className='cmdBtn' onClick={()=>{ setIsTyping(true) }}></button>
                 <span className='aboutP'>
-                    <span>Hi, I'm Evan Abbott, a computer science sophomore at UTK. I'm currently interested in data science and especially machine learning.</span>
+                    <span>
+                        Hi, I'm Evan Abbott, a computer science sophomore at UTK. I'm currently interested in data science and especially machine learning.
+                        I've been coding since 2021, dabbling with NodeJS,
+                    </span>
                     <Typewriter text={aboutText} delay={100} />
                     <span className='rect'>|</span>
                 </span>
@@ -49,7 +52,7 @@ export default function Content(props) {
                     <div className='experienceItem'>
                         <p className='itemHeader'>Unpaid Internship</p>
                         <p className='itemDate'>Summer 2021</p>
-                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.7 + ", " + props.color[1][1]/1.7 + ", " + props.color[1][2]/1.7 + ")" }}>
+                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.9 + ", " + props.color[1][1]/1.9 + ", " + props.color[1][2]/1.9 + ")" }}>
                             <li>GitHub and coding with others</li>
                             <li>GUI design with PyQt Creator</li>
                             <li>Beginner Python programming</li>
@@ -61,7 +64,7 @@ export default function Content(props) {
                     <div className='experienceItem'>
                         <p className='itemHeader'>SULI at ORNL</p>
                         <p className='itemDate'>Summer 2022</p>
-                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.7 + ", " + props.color[0][1]/1.7 + ", " + props.color[0][2]/1.7 + ")" }}>
+                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.9 + ", " + props.color[1][1]/1.9 + ", " + props.color[1][2]/1.9 + ")" }}>
                             <li>GitHub and coding with others</li>
                             <li>Presented my contributions at meetings</li>
                             <li>Object recognition with point clouds</li>

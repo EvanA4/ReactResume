@@ -3,13 +3,16 @@ import { isMobile } from 'react-device-detect'
 
 import './styles/Projects.css'
 
-export default function Projects(props) {
+export default function Projects() {
 
     let reactSwipeEl;
 
     return (
         <>
-            <p className='projectLabel' id='Projects'>Projects</p>
+            <p className='projectLabel'>
+                Projects
+                <span className='projectsAnchor' id='Projects'></span>
+            </p>
             <div className='projectContainer'>
                 <ReactSwipe
                     swipeOptions={{ continuous: false }}

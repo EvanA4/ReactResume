@@ -1,3 +1,8 @@
+.projectsAnchor {
+    position: absolute;
+    top: -10vh;
+}
+
 .projectLabel {
     color: rgb(157, 255, 157);
     font-size: min(15vw, 100px);
