@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react'
 
 import World from './components/World';
-// import Opening from './components/Opening';
+import Opening from './components/Opening';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Content from './components/Content';
@@ -20,6 +20,9 @@ function getWindowDimensions() {
 
 
 function App() {
+	// determine if old opening should be playing
+	const [isOpening, setOpening] = useState(false);
+
 	// determine color for experiences
 	const [color, setColor] = useState([[256, 256, 256], [256, 256, 256]]);
 	const calcColor = (y) => {
@@ -61,7 +64,8 @@ function App() {
 
 	return (
 		<>
-			<Nav />
+			{isOpening ? <Opening /> : <></>}
+			<Nav setOpening={setOpening} />
 			<World physicsOn={physicsOn} setPhysics={setPhysics} getWindowDimensions={getWindowDimensions} setIsPressed={setIsPressed} isPressed={isPressed} />
 			<div className='main'>
 				<Content color={color} /> : <></>
