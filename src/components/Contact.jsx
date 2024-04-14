@@ -12,8 +12,8 @@ export default function Contact() {
             <fieldset>
                 <legend>
                     <span>Contact</span>
-                    <span className='email' id={emailStates[showEmail]} >evanabbott04@gmail.com</span>
                 </legend>
+                <span className='email' id={emailStates[showEmail]} >evanabbott04@gmail.com</span>
                 <a id="github" href="https://github.com/EvanA4"><img src="./src/assets/github.svg"/></a>
                 <a id="linkedin" href="https://www.linkedin.com/in/evan-abbott-667167214/"><img src="./src/assets/linkedin.svg"/></a>
                 <button onClick={() => setShowEmail(showEmail % 2 == 0 ? 1 : 2)}><img src="./src/assets/gmail.svg"/></button>
