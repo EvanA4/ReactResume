@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import './styles/Nav.css'
 
-export default function Nav() {
+export default function Nav(props) {
     const [navOpen, setNav] = useState(0);
     const btnStates = ['navBtn', 'openNavBtn', 'closeNavBtn'];
     const pgStates = ['pg', 'openPg', 'closePg'];
@@ -26,6 +26,12 @@ export default function Nav() {
                         <a href="#Contact" onClick={()=>{
                             setNav(2);
                         }}><img className='icon' src="./src/assets/magnifyingGlass.svg"/>Contact</a>
+                        <button className='openingBtn' onClick={() => {
+                            props.setOpening(true);
+                            setTimeout(() => {
+                                props.setOpening(false);
+                            }, 3570);
+                        }}><img src="./src/assets/wave.svg" /></button>
                 </div>
             </div>
             <button className={btnStates[navOpen]} onClick={()=>{

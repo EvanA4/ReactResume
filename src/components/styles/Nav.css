@@ -63,6 +63,24 @@
     font-size: calc(max(min(64px, 4.2vw), 40px));
 }
 
+.openingBtn {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    background-color: transparent;
+    border: none;
+    opacity: .75;
+}
+
+.openingBtn:hover, .openingBtn:active {
+    opacity: 1;
+}
+
+.openingBtn img {
+    height: 4.2em;
+}
+
 .icon {
     height: .85em;
     margin-right: calc(max(min(50px, 4.19vw), 40px));
