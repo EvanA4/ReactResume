@@ -1,3 +1,58 @@
+.contact {
+    background-color: black;
+    overflow-x: clip;
+}
+
+.contactHeader {
+    position: relative;
+    color: white;
+    font-size: min(15vw, 100px);
+    user-select: none;
+    padding: 0 calc(max(2vw, 20px)) 0 calc(max(2vw, 20px));
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+
+    transform: translateY(-50%);
+}
+
+.broadBorder {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border: 1px solid gray;
+    z-index: -2;
+}
+
+.header {
+    padding: 0 calc(max(2vw, 20px)) 0 calc(max(2vw, 20px));
+    position: relative;
+}
+
+.header span {
+    z-index: 1;
+}
+
+.cancelBorder {
+    width: 100%;
+    background-color: black;
+    top: calc(50% - 1px);
+    left: 0;
+    height: 4px;
+    position: absolute;
+    z-index: -1;
+}
+
+.email {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gray;
+}
+
 .contact img {
     height: 70px;
 }
@@ -7,33 +62,15 @@
     border: none;
 }
 
-.email {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: gray;
-}
-
-.contact fieldset {
+.contactList {
     position: relative;
-    padding: 50px 0;
+    padding-bottom: 70px;
     margin: 0;
     border: transparent;
-    border-top: 2px solid gray;
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.contact legend {
-    position: relative;
-    color: white;
-    font-size: min(15vw, 100px);
-    user-select: none;
-    padding: 0 calc(max(2vw, 20px)) 0 calc(max(2vw, 20px));
-    margin: 0 auto;
 }
 
 @media screen and (max-width: 1344px) {
