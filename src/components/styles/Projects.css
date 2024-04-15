@@ -30,7 +30,7 @@
 .slide {
     padding: 30px calc(5% + 70px) 30px 50px;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     background-color: rgb(4, 5, 4);
     border-radius: 50px;
     border: 1px solid rgb(0, 163, 0);
