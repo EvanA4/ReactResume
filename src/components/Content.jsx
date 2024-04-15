@@ -49,16 +49,6 @@ export default function Content(props) {
                     Experience
                 </p>
                 <div className='experienceList'>
-                    <div className='experienceItem'>
-                        <p className='itemHeader'>Unpaid Internship</p>
-                        <p className='itemDate'>Summer 2021</p>
-                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.9 + ", " + props.color[1][1]/1.9 + ", " + props.color[1][2]/1.9 + ")" }}>
-                            <li>GitHub and coding with others</li>
-                            <li>GUI design with PyQt Creator</li>
-                            <li>Beginner Python programming</li>
-                            <li>Facial recognition of distorted images</li>
-                        </ul>
-                    </div >
 
 
                     <div className='experienceItem'>
@@ -72,6 +62,20 @@ export default function Content(props) {
                             <li>Data Structures and algorithms</li>
                         </ul>
                     </div>
+
+
+                    <div className='experienceItem'>
+                        <p className='itemHeader'>Unpaid Internship</p>
+                        <p className='itemDate'>Summer 2021</p>
+                        <ul style={{ listStyle: "square", color: "rgb(" + props.color[1][0]/1.9 + ", " + props.color[1][1]/1.9 + ", " + props.color[1][2]/1.9 + ")" }}>
+                            <li>GitHub and coding with others</li>
+                            <li>GUI design with PyQt Creator</li>
+                            <li>Beginner Python programming</li>
+                            <li>Facial recognition of distorted images</li>
+                        </ul>
+                    </div >
+
+
                 </div>
             </div>
         </>

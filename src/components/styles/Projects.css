@@ -37,6 +37,11 @@
     position: relative;
 }
 
+#mobileSlide {
+    padding: 30px 50px;
+    width: calc(62.5% + 10px);
+}
+
 .slide:hover {
     background-color: rgb(12, 15, 12);
     border: 1px solid rgb(0, 190, 0);
@@ -47,6 +52,7 @@
     font-size: min(8.5vw, 50px);
     width: fit-content;
     margin: 0 0 30px 0;
+    text-decoration: none;
 }
 
 .slideDesc, .slide ul {
