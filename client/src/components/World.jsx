@@ -15,7 +15,7 @@ export default function World(props) {
 
     // 3D evan object for physics engine
     const Evan3D = (props, vec = new THREE.Vector3) => {
-        const { nodes, materials } = useGLTF('./src/assets/cheaperMiniEvan.glb');
+        const { nodes, materials } = useGLTF('/cheaperMiniEvan.glb');
         const api = useRef();
         useFrame(() => {
             vec = api.current?.translation();
@@ -95,7 +95,7 @@ export default function World(props) {
                                         ]);
                             }, 1000);
                         }}></button>
-                        <img src="./src/assets/powerButton.svg"/>
+                        <img src="/powerButton.svg"/>
                     </div>
                     <div className='btnShadow' id={props.isPressed ? 'toggledShadow' : ''}></div>
                 </> }
@@ -103,61 +103,3 @@ export default function World(props) {
         </div>
     )
 }
-
-/*
-location = 1.227296 + (374017 − 1.227296)/(1 + (height/0.005381233)^0.9531064)
-location = 2.713608 + 0.0008374587*width + 8.784078*10^-7*width^2
-
-
-
-width: 1371
-height: 824
-right: 5.5
-left: -5.5
-
-width: 1371
-height: 602
-right: 7
-left: -7
-
-width: 1371
-height: 412
-right: 9.5
-left: -9.5
-
-width: 1371
-height: 298
-right: 12.5
-left: -12.5
-
-
-
-width: 1371
-height: 824
-right: 5.5
-left: -5.5
-
-width: 1195
-height: 824
-right: 5
-left: -5
-
-width: 997
-height: 824
-right: 4.4
-left: -4.4
-
-width: 581
-height: 824
-right: 3.5
-left: -3.5
-
-
-
-width: 999
-height: 720
-predicted from height: 6.1
-predicted from width: 4.43
-avg: 5.265
-actual: 
-*/

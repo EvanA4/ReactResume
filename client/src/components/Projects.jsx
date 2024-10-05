@@ -31,8 +31,8 @@ export default function Projects() {
                                 <li>ThreeJS for 3D display of the robot's environment</li>
                                 <li>NodeJS websocket server</li>
                             </ul>
-                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button disabled className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button disabled className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="/navArrow.svg"/></button>}
                             {isMobile ? <span className='swipeTip' id={'showTip' }>Swipe the cards!</span> : <></>}
                         </div>
                     </div>
@@ -49,8 +49,8 @@ export default function Projects() {
                                 <li>ThreeJS and Rapier for physics engine</li>
                                 <li>Web design</li>
                             </ul>
-                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="/navArrow.svg"/></button>}
                         </div>
                     </div>
                     
@@ -67,8 +67,8 @@ export default function Projects() {
                                 <li>Pandas dataframes and matplotlib</li>
                                 <li>Yahoo stocks API</li>
                             </ul>
-                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="/navArrow.svg"/></button>}
                         </div>
                     </div>
 
@@ -81,8 +81,8 @@ export default function Projects() {
                                 <li>Basic C++</li>
                                 <li>Saved me time in matrix algebra</li>
                             </ul>
-                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="/navArrow.svg"/></button>}
                         </div>
                     </div>
 
@@ -98,8 +98,8 @@ export default function Projects() {
                                 <li>Basic C++</li>
                                 <li>Saved me time in Minecraft</li>
                             </ul>
-                            {isMobile ? <></> : <button disabled className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="./src/assets/navArrow.svg"/></button>}
-                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="./src/assets/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button disabled className='nextBtn' onClick={() => reactSwipeEl.next()}><img src="/navArrow.svg"/></button>}
+                            {isMobile ? <></> : <button className='prevBtn' onClick={() => reactSwipeEl.prev()}><img src="/navArrow.svg"/></button>}
                         </div>
                     </div>
 

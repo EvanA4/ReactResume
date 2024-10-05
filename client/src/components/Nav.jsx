@@ -13,31 +13,31 @@ export default function Nav(props) {
                 <div className='navLinks'>
                         <a href="#About" onClick={()=>{
                             setNav(2);
-                        }}><img className='icon' src="./src/assets//questionMark.svg"/>About</a>
+                        }}><img className='icon' src="/questionMark.svg"/>About</a>
 
                         <a href="#Experience" onClick={()=>{
                             setNav(2);
-                        }}><img className='icon' src="./src/assets/book.svg"/>Experience</a>
+                        }}><img className='icon' src="/book.svg"/>Experience</a>
 
                         <a href="#Projects" onClick={()=>{
                             setNav(2);
-                        }}><img className='icon' src="./src/assets/hammer.svg"/>Projects</a>
+                        }}><img className='icon' src="/hammer.svg"/>Projects</a>
 
                         <a href="#Contact" onClick={()=>{
                             setNav(2);
-                        }}><img className='icon' src="./src/assets/magnifyingGlass.svg"/>Contact</a>
+                        }}><img className='icon' src="/magnifyingGlass.svg"/>Contact</a>
                         <button className='openingBtn' onClick={() => {
                             props.setOpening(true);
                             setTimeout(() => {
                                 props.setOpening(false);
                             }, 3570);
-                        }}><img src="./src/assets/wave.svg" /></button>
+                        }}><img src="/wave.svg" /></button>
                 </div>
             </div>
             <button className={btnStates[navOpen]} onClick={()=>{
                 if (navOpen % 2 == 0) setNav(1);
                 else setNav(2);
-            }}><img src="./src/assets/bookmark.svg"/></button>
+            }}><img src="/bookmark.svg"/></button>
         </div>
     )
 }

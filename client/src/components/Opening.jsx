@@ -11,7 +11,7 @@ export default function Opening() {
     return (
         <div className='openingVeil'>
             <div className='opening'>
-                <video src='./src/assets/resume.mp4' autoPlay muted playsInline config={config}> </video>
+                <video src='/resume.mp4' autoPlay muted playsInline config={config}> </video>
             </div>
         </div>
     )
